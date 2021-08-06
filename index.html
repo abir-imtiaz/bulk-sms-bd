@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="sendText.js"></script>
+    <script type="text/javascript" src="config.js"></script>
+  </head>
+  <body>
+    <h2>Send Text</h2>
+    <form id="textForm" onsubmit="return text()">
+      <label for="phone">Phone No:</label><br />
+      <input type="text" id="phone" name="phone" /><br />
+      <label for="message">Message:</label><br />
+      <textarea
+        id="message"
+        name="message"
+        value=""
+        rows="4"
+        cols="50"
+      ></textarea>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
