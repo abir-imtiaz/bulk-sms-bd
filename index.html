@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script type="text/javascript" src="sendText.js"></script>
-    <script type="text/javascript" src="config.js"></script>
-  </head>
+  <head> </head>
   <body>
     <h2>Send Text</h2>
-    <form id="textForm" onsubmit="return text()">
+    <form method="post" action="sendText.php">
       <label for="phone">Phone No:</label><br />
       <input type="text" id="phone" name="phone" /><br />
       <label for="message">Message:</label><br />
@@ -17,7 +14,11 @@
         rows="4"
         cols="50"
       ></textarea>
-      <input type="submit" value="Submit" />
+      <input type="submit" value="click" name="submit" />
     </form>
+
+    <!-- <br />
+    <input id="fileupload" type="file" name="fileupload" />
+    <button id="upload-button" onclick="return uploadFile()">Upload</button> -->
   </body>
 </html>
